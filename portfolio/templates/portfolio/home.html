@@ -1,6 +1,12 @@
 <h1>  Vladimir's Portfolio </h1>
 
+{% load static %}
 
+<a href="{% static 'portfolio/VK.doc'%}">Resume</a>
+<a href="{% url 'blog:all_blogs' %}">Blog</a>
+
+<br>
+<img src="{% static 'portfolio/frod.jpg' %}">
 {% for project in projects %}
 
 <h2>{{ project.title }}</h2>
