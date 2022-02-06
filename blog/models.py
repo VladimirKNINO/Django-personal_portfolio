@@ -8,3 +8,6 @@ class Projec(models.Model):
     image = models.ImageField(upload_to='blog/images/',blank=True)
     date = models.DateField(auto_now = True)
     url = models.URLField(blank=True)
+
+    def __str__(self):
+        return self.title

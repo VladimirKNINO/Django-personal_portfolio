@@ -1,4 +1,6 @@
-Helo blog
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
 
 <h2>Vladimir has written {{ projects.count }}</h2>
 {% for project in projects %}
@@ -12,3 +14,4 @@ Helo blog
 
 
 {% endfor %}
+{%endblock%}
